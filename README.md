@@ -1,5 +1,7 @@
 # 🚛 Nash-Gleichgewicht & Best-Response – wenn jeder Lkw sich selbst das beste Tor sucht
 
+**[→ Demo live ausprobieren](https://sebastianhanisch-nash-demo.streamlit.app/)**
+
 Erstes Stück der **Spieltheorie-&-Mechanism-Design-Linie** der "Konzepte"-Reihe im Portfolio von
 [Sebastian Hanisch](https://sebastianhanisch.net) – Operations Research und Machine Learning. Wurzel des nicht-kooperativen
 Astes: Lkw wählen eigennützig ein Tor, die Wartezeit steigt mit der Auslastung. Die Demo zeigt, wie Best-Response-Dynamik
