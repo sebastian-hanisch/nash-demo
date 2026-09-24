@@ -16,7 +16,7 @@ import nash_bimatrix as B
 import nash_constants as C
 import nash_game as G
 from nash_evaluation import Settings, analyse, convergence_experiment, equilibria_experiment, scaling_experiment
-from nash_presets import apply_preset, bounds, init_session_state_defaults, load_permalink_settings, randomize_run_seed, randomize_seed, sync_query_params
+from nash_presets import apply_preset, bounds, init_session_state_defaults, load_permalink_settings, randomize_run_seed, randomize_seed, sync_query_params, seed_widget
 from nash_visualization import build_convergence, build_equilibria, build_gates, build_potential_curve, build_scaling, build_social_curve
 
 st.set_page_config(page_title="Nash-Gleichgewicht – Sebastian Hanisch", layout="wide")
@@ -101,10 +101,12 @@ with st.sidebar:
     st.markdown("**Best-Response-Dynamik**")
     mode = st.selectbox("Wer wechselt wann?", C.MODES, key="mode_select", format_func=lambda k: C.MODE_LABELS[k])
     if mode == "sequential":
+        seed_widget("order_select")
         order = st.selectbox("Reihenfolge", C.ORDERS, key="order_select", format_func=lambda k: C.ORDER_LABELS[k])
         p = float(st.session_state.get("_kept_p_slider", C.DEFAULT_P))
         st.session_state["_kept_order_select"] = order
     else:
+        seed_widget("p_slider")
         p = st.slider("Wechsel-Wahrscheinlichkeit p", *bounds("p_slider"), key="p_slider", step=C.P_STEP, format="%.1f",
                       help="Jeder unzufriedene Lkw wechselt in einer Runde nur mit dieser Wahrscheinlichkeit (Dämpfung). 1 = alle gleichzeitig.")
         order = st.session_state.get("_kept_order_select", "index")
