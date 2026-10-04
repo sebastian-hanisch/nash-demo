@@ -299,7 +299,7 @@ if mixed is not None:
     st.caption("Zwei Lkw, die sich aus dem Weg gehen wollen, haben zwei reine Gleichgewichte (jeder ein anderes Tor) und ein gemischtes - aber welches gespielt wird, "
                "lässt Nash offen. Ein Signal von außen (\"du Tor A, ich Tor B\") könnte das lösen: Thema der Korrelierten Gleichgewichte.")
 else:
-    st.caption("Ab δ ≥ 2 ist Tor A für beide die bessere Wahl, egal was der andere tut - es bleibt ein einziges Gleichgewicht und kein gemischtes.")
+    st.caption("Ab δ > 2 ist Tor A für beide die bessere Wahl, egal was der andere tut - es bleibt ein einziges Gleichgewicht und kein gemischtes. Bei δ = 2 genau ist Tor B als Antwort auf Tor A gleich gut (Gleichstand): dann sind auch (A, B) und (B, A) reine Gleichgewichte, aber kein gemischtes.")
 
 st.markdown("---")
 
@@ -348,6 +348,6 @@ Implementiert in `nash_game.py` (Spiel, Best-Response, Dynamiken), `nash_enumera
 st.markdown("---")
 st.caption(
     "Diese Demo ist Teil des Portfolios von [Sebastian Hanisch](https://sebastianhanisch.net) – "
-    "Operations Research und Machine Learning. Interesse an einer maßgeschneiderten Lösung für "
-    "Ihr Unternehmen? [Kontakt aufnehmen](https://sebastianhanisch.net/kontakt.html)"
+    "Operations Research und Machine Learning ([Über mich](https://sebastianhanisch.net/ueber-mich.html)). "
+    "Mehr zur Reihe: [Spieltheorie: von Nash bis Myerson-Satterthwaite](https://sebastianhanisch.net/konzepte-spieltheorie.html)."
 )
