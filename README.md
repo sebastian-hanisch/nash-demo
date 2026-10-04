@@ -52,7 +52,7 @@ Feste Instanzen (Seeds im Code), je 12 Lkw und 3 Tore, gemischte Größen, wenn 
 | Ist das Gleichgewicht optimal? | Nein. Das schlechteste Gleichgewicht liegt bei 12 Lkw im Mittel 5,9 % über dem Optimum (Maximum 10,9 %; bei 6 Lkw Maximum 19,7 %). Selbst bei einheitlichen Größen, wo es nur einen Lastvektor gibt, liegt es im Mittel 1,6 % darüber (12 Lkw). | dito |
 | Wie wächst der Aufwand? | Mittel 3,3 Wechsel bei 8 Lkw, 9,9 bei 40 Lkw – weniger als ein Wechsel je zwei Lkw. | `test_scaling_moves_grow_but_less_than_one_per_truck` |
 | Standardinstanz (Seed 35) | 4 Wechsel bis zum Gleichgewicht (181,0 → 165,1 min, Optimum 156,2); 2 Lastvektoren sind Gleichgewicht. Alle gleichzeitig: Zyklus der Länge 2. Gedämpft (p = 0,5): 23 Wechsel in 7 Runden. Einheitliche Lkw: 6 Wechsel, 129,9 vs. Optimum 127,5 min. Kleine Instanz (8 Lkw): 80 Gleichgewichte mit 2 Lastvektoren (96,9 bis 100,3, Optimum 95,5). Große Instanz (40 Lkw, 6 Tore): 18 Wechsel. | `test_preset_help_numbers_on_the_standard_instance` |
-| Mini-Spiel | Unter δ = 2 min Unterschied zwischen den Toren: zwei reine Gleichgewichte (jeder ein anderes Tor) und ein gemischtes; ab δ > 2 ist Tor A dominant, es bleibt ein reines (bei δ = 2 genau herrscht Gleichstand: drei reine, kein gemischtes). | `test_bimatrix.py` |
+| Mini-Spiel | Unter δ = 2 min Unterschied zwischen den Toren: zwei reine Gleichgewichte (jeder ein anderes Tor) und ein gemischtes; ab δ > 2 ist Tor A dominant, es bleibt ein reines (bei δ = 2 genau herrscht Gleichstand: drei reine, kein vollständig gemischtes; dazu entartete Gleichgewichte, in denen ein Lkw bei Tor A bleibt und der andere, dem beide Tore gleich gut sind, beliebig mischt). | `test_bimatrix.py` |
 
 ## Ehrliche Grenzen
 

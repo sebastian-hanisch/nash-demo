@@ -299,7 +299,7 @@ if mixed is not None:
     st.caption("Zwei Lkw, die sich aus dem Weg gehen wollen, haben zwei reine Gleichgewichte (jeder ein anderes Tor) und ein gemischtes - aber welches gespielt wird, "
                "lässt Nash offen. Ein Signal von außen (\"du Tor A, ich Tor B\") könnte das lösen: Thema der Korrelierten Gleichgewichte.")
 else:
-    st.caption("Ab δ > 2 ist Tor A für beide die bessere Wahl, egal was der andere tut - es bleibt ein einziges Gleichgewicht und kein gemischtes. Bei δ = 2 genau ist Tor B als Antwort auf Tor A gleich gut (Gleichstand): dann sind auch (A, B) und (B, A) reine Gleichgewichte, aber kein gemischtes.")
+    st.caption("Ab δ > 2 ist Tor A für beide die bessere Wahl, egal was der andere tut - es bleibt ein einziges Gleichgewicht und kein gemischtes. Bei δ = 2 genau ist Tor B als Antwort auf Tor A gleich gut (Gleichstand): dann sind auch (A, B) und (B, A) reine Gleichgewichte, aber keins, in dem beide Lkw mischen (es gibt nur entartete Fälle: ein Lkw bleibt bei Tor A, dem anderen sind beide Tore gleich gut, und er mischt beliebig).")
 
 st.markdown("---")
 
